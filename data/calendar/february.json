@@ -1,0 +1,66 @@
+{
+    "name": "February",
+    "year": 2021,
+    "days": [
+        {
+            "number": 1,
+            "type": "LIVE",
+            "minPrice": "$120"
+        },
+        {
+            "number": 2,
+            "type": "CACHED",
+            "minPrice": "$150"
+        },
+        {
+            "number": 3,
+            "type": "LIVE",
+            "minPrice": "$90"
+        },
+        {
+            "number": 4,
+            "type": "LIVE",
+            "minPrice": "$110"
+        },
+        {
+            "number": 5,
+            "type": "LIVE",
+            "minPrice": "$100"
+        },
+        {
+            "number": 7,
+            "type": "CACHED",
+            "minPrice": "$105"
+        },
+        {
+            "number": 8,
+            "type": "LIVE",
+            "minPrice": "$190"
+        },
+        {
+            "number": 10,
+            "type": "LIVE",
+            "minPrice": "$180"
+        },
+        {
+            "number": 11,
+            "type": "LIVE",
+            "minPrice": "$170"
+        },
+        {
+            "number": 12,
+            "type": "CACHED",
+            "minPrice": "$145"
+        },
+        {
+            "number": 13,
+            "type": "LIVE",
+            "minPrice": "$219"
+        },
+        {
+            "number": 20,
+            "type": "LIVE",
+            "minPrice": "$225"
+        }
+    ]
+}
