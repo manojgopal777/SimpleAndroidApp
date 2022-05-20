@@ -1,0 +1,36 @@
+{
+    "name": "July",
+    "year": 2022,
+    "days": [
+        {
+            "number": 3,
+            "type": "LIVE",
+            "minPrice": "$120"
+        },
+        {
+            "number": 5,
+            "type": "CACHED",
+            "minPrice": "$150"
+        },
+        {
+            "number": 6,
+            "type": "LIVE",
+            "minPrice": "$90"
+        },
+        {
+            "number": 11,
+            "type": "LIVE",
+            "minPrice": "$110"
+        },
+        {
+            "number": 22,
+            "type": "LIVE",
+            "minPrice": "$100"
+        },
+        {
+            "number": 25,
+            "type": "LIVE",
+            "minPrice": "$225"
+        }
+    ]
+}
