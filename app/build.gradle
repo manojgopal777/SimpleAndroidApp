@@ -6,13 +6,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.qantas"
         minSdkVersion 24
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -26,48 +26,66 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
+
+    namespace 'com.qantas'
 }
 
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
-    implementation "androidx.constraintlayout:constraintlayout:2.1.3"
-    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation "androidx.recyclerview:recyclerview:1.3.0"
     implementation "androidx.cardview:cardview:1.0.0"
     implementation "androidx.gridlayout:gridlayout:1.0.0"
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.google.code.gson:gson:2.8.9'
 
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
 
     implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
     implementation 'io.reactivex.rxjava2:rxkotlin:2.4.0'
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc01"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc01"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1"
 
-    implementation "com.google.dagger:hilt-android:2.38.1"
-//    implementation "com.google.dagger:hilt-android-compiler:2.38.1"
+    implementation "com.google.dagger:hilt-android:2.42"
+    implementation "com.google.dagger:hilt-android-compiler:2.42"
 
-    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+
+    implementation "androidx.compose.runtime:runtime:${composeVersion}"
+    implementation "androidx.lifecycle:lifecycle-runtime-compose:${androidXLifecycleVersion}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:${androidXLifecycleVersion}"
+    implementation "androidx.compose.ui:ui:${composeVersion}"
+    implementation "androidx.compose.foundation:foundation:${composeVersion}"
+    implementation "androidx.compose.foundation:foundation-layout:${composeVersion}"
+    implementation "androidx.compose.material:material:${composeVersion}"
+    implementation "androidx.compose.ui:ui-tooling:${composeVersion}"
+    implementation "androidx.compose.ui:ui-tooling-preview:${composeVersion}"
+    implementation "com.google.android.material:compose-theme-adapter:${composeThemeVersion}"
+    implementation "androidx.compose.runtime:runtime-livedata:${composeVersion}"
+    implementation "androidx.compose.ui:ui-test-junit4:${composeVersion}"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:${composeVersion}"
+
+
+    kapt "com.google.dagger:hilt-android-compiler:2.42"
 
     testImplementation 'junit:junit:4.13.2'
-    testImplementation "io.mockk:mockk:1.12.2"
+    testImplementation "io.mockk:mockk:1.12.3"
     testImplementation 'org.mockito:mockito-core:2.19.0'
 
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 }
