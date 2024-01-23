@@ -33,6 +33,11 @@ android {
         jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/gradle/incremental.annotation.processors'
+    }
+
     namespace 'com.qantas'
 }
 
